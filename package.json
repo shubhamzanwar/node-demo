@@ -4,7 +4,8 @@
   "description": "Sample posts app to demostrate TDD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=dev server.js",
+    "test": "NODE_ENV=test jest --coverage"
   },
   "author": "Shubham Zanwar",
   "license": "ISC",
