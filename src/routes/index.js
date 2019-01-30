@@ -1,7 +1,7 @@
-const { pingHandler } = require('../handlers/pingHandler');
+const pingRoutes = require('./ping');
+const postRoutes = require('./posts');
 
-module.exports = [{
-  path: '/ping',
-  method: 'GET',
-  handler: pingHandler,
-}];
+module.exports = [
+  ...pingRoutes,
+  ...postRoutes,
+];
