@@ -4,12 +4,13 @@
   "description": "Sample posts app to demostrate TDD",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=dev server.js",
+    "start": "NODE_ENV=dev node server.js",
     "test": "NODE_ENV=test jest --coverage"
   },
   "author": "Shubham Zanwar",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "hapi": "^17.8.1"
   },
   "devDependencies": {
